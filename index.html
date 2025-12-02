@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prince Zahid - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio website of Prince Zahid - Senior Customer Operations Engineer" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 14px 20px;
+      background: #1e293b;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #cbd5f5;
+      text-decoration: none;
+      font-size: 0.95rem;
+      padding: 6px 10px;
+      border-radius: 999px;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    }
+
+    nav a:hover {
+      background: #0f172a;
+      color: #38bdf8;
+      transform: translateY(-1px);
+    }
+
+    header, section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: #38bdf8;
+      margin-top: 0;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 16px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.6);
+      border: 1px solid #111827;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9);
+      border-color: #38bdf8;
+    }
+
+    .profile-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .profile-wrapper img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .skills span {
+      background: #0f172a;
+      border: 1px solid #334155;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin: 4px;
+      display: inline-block;
+      font-size: 0.85rem;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e293b;
+      margin-top: 20px;
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+
+    a {
+      color: #38bdf8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#awards">Awards</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <header id="about">
+    <div class="profile-wrapper">
+      <img src="profile.jpg" alt="Prince Zahid">
+      <div>
+        <h1>Prince Zahid</h1>
+        <h3>Senior Customer Operations Engineer</h3>
+        <p><strong>Email:</strong> mirzahid431@gmail.com</p>
+        <p><strong>Phone:</strong> +91-6005200277</p>
+        <p><strong>Location:</strong> Srinagar, India</p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="https://linkedin.com/in/prince-zahid-5b389b10b" target="_blank">
+            linkedin.com/in/prince-zahid-5b389b10b
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px;">
+      <h2>Personal Summary</h2>
+      <p>
+        A passionate and detail-oriented professional with extensive experience in database administration and big data
+        environments. Demonstrated expertise in managing enterprise databases, optimizing performance, and navigating
+        complex data ecosystems. Strong analytical and data-informed approach to troubleshooting, decision-making,
+        and incident resolution.
+      </p>
+    </div>
+  </header>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+
+    <div class="card">
+      <h3>Senior Customer Operations Engineer — Cloudera Inc.</h3>
+      <p><em>Jan 2022 – Present</em></p>
+      <ul>
+        <li>Support services for Cloudera enterprise customers across Hive, HUE, Impala, Tez, and CDW.</li>
+        <li>Mentored new joiners on Hive, HUE, and related components.</li>
+        <li>Triage, diagnose, and escalate complex customer inquiries.</li>
+        <li>Develop technical content for the corporate knowledge base.</li>
+        <li>Investigate product issues to identify trends.</li>
+        <li>Collaborate with product &amp; engineering on feature requests.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Database Administrator — Lumen Technologies</h3>
+      <p><em>Dec 2018 – Jan 2022</em></p>
+      <ul>
+        <li>Managed 50+ SQL Server databases across on-prem &amp; Azure environments.</li>
+        <li>Implemented HA/DR strategies (AlwaysOn, clustering, replication, TDE).</li>
+        <li>Performed SQL Server patching, migrations, performance tuning &amp; security.</li>
+        <li>Streamlined backup/restore and cloud resilience processes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>Apache Hive</span><span>Hue</span><span>Hadoop (HDP/CDH/CDP)</span>
+      <span>Linux (Red Hat)</span><span>Kubernetes</span><span>Cloudera Data Warehouse</span>
+      <span>Kerberos</span><span>LDAP</span><span>SSL/TLS</span><span>Networking</span>
+      <span>MS SQL Server</span><span>YARN</span><span>Impala</span><span>Azure</span><span>AWS</span>
+      <span>RDBMS</span><span>SQL</span>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>M.Tech in Computing Science</h3>
+        <p>OPJS University</p>
+      </div>
+
+      <div class="card">
+        <h3>B.Tech in Computer Science &amp; Engineering</h3>
+        <p>Baba Ghulam Shah Badshah University</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section id="awards">
+    <h2>Honors &amp; Awards</h2>
+    <div class="card">
+      <ul>
+        <li>Rising Star — CenturyLink (2019)</li>
+        <li>Star COE — Cloudera (2023)</li>
+        <li>Star COE — Cloudera (2024)</li>
+        <li>Code Award Winner — Cloudera (2025)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul>
+        <li>Microsoft SQL Database Infrastructure Administration (70-764)</li>
+        <li>Cloudera Generalist (CDP-0011)</li>
+        <li>ITIL 4 Foundation</li>
+        <li>Cloudera Administrator On-Premises (CDP-2001)</li>
+        <li>Azure Fundamentals (AZ-900)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Email:</strong> <a href="mailto:mirzahid431@gmail.com">mirzahid431@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/prince-zahid-5b389b10b" target="_blank">linkedin.com/in/prince-zahid-5b389b10b</a></p>
+      <p><strong>Phone:</strong> +91-6005200277</p>
+    </div>
+  </section>
+
+  <footer>
+    © <script>document.write(new Date().getFullYear());</script> Prince Zahid — All Rights Reserved.
+  </footer>
+
+</body>
+</html>
