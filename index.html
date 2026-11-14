@@ -1,267 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Prince Zahid - Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio website of Prince Zahid - Senior Customer Operations Engineer" />
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 14px 20px;
-      background: #1e293b;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      color: #cbd5f5;
-      text-decoration: none;
-      font-size: 0.95rem;
-      padding: 6px 10px;
-      border-radius: 999px;
-      transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
-    }
-
-    nav a:hover {
-      background: #0f172a;
-      color: #38bdf8;
-      transform: translateY(-1px);
-    }
-
-    header, section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    h1, h2, h3 {
-      color: #38bdf8;
-      margin-top: 0;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 16px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.6);
-      border: 1px solid #111827;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9);
-      border-color: #38bdf8;
-    }
-
-    .profile-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .profile-wrapper img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #38bdf8;
-      box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 16px;
-    }
-
-    .skills span {
-      background: #0f172a;
-      border: 1px solid #334155;
-      padding: 6px 10px;
-      border-radius: 999px;
-      margin: 4px;
-      display: inline-block;
-      font-size: 0.85rem;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1e293b;
-      margin-top: 20px;
-      color: #94a3b8;
-      font-size: 0.85rem;
-    }
-
-    a {
-      color: #38bdf8;
-    }
-  </style>
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#awards">Awards</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- About -->
-  <header id="about">
-    <div class="profile-wrapper">
-      <img src="profile.jpg" alt="Prince Zahid">
-      <div>
-        <h1>Prince Zahid</h1>
-        <h3>Senior Customer Operations Engineer</h3>
-        <p><strong>Email:</strong> mirzahid431@gmail.com</p>
-        <p><strong>Phone:</strong> +91-6005200277</p>
-        <p><strong>Location:</strong> Srinagar, India</p>
-        <p>
-          <strong>LinkedIn:</strong>
-          <a href="https://linkedin.com/in/prince-zahid-5b389b10b" target="_blank">
-            linkedin.com/in/prince-zahid-5b389b10b
-          </a>
-        </p>
-      </div>
-    </div>
-
-    <div class="card" style="margin-top:20px;">
-      <h2>Personal Summary</h2>
-      <p>
-        A passionate and detail-oriented professional with extensive experience in database administration and big data
-        environments. Demonstrated expertise in managing enterprise databases, optimizing performance, and navigating
-        complex data ecosystems. Strong analytical and data-informed approach to troubleshooting, decision-making,
-        and incident resolution.
-      </p>
-    </div>
-  </header>
-
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Professional Experience</h2>
-
-    <div class="card">
-      <h3>Senior Customer Operations Engineer — Cloudera Inc.</h3>
-      <p><em>Jan 2022 – Present</em></p>
-      <ul>
-        <li>Support services for Cloudera enterprise customers across Hive, HUE, Impala, Tez, and CDW.</li>
-        <li>Mentored new joiners on Hive, HUE, and related components.</li>
-        <li>Triage, diagnose, and escalate complex customer inquiries.</li>
-        <li>Develop technical content for the corporate knowledge base.</li>
-        <li>Investigate product issues to identify trends.</li>
-        <li>Collaborate with product &amp; engineering on feature requests.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h3>Database Administrator — Lumen Technologies</h3>
-      <p><em>Dec 2018 – Jan 2022</em></p>
-      <ul>
-        <li>Managed 50+ SQL Server databases across on-prem &amp; Azure environments.</li>
-        <li>Implemented HA/DR strategies (AlwaysOn, clustering, replication, TDE).</li>
-        <li>Performed SQL Server patching, migrations, performance tuning &amp; security.</li>
-        <li>Streamlined backup/restore and cloud resilience processes.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="card skills">
-      <span>Apache Hive</span><span>Hue</span><span>Hadoop (HDP/CDH/CDP)</span>
-      <span>Linux (Red Hat)</span><span>Kubernetes</span><span>Cloudera Data Warehouse</span>
-      <span>Kerberos</span><span>LDAP</span><span>SSL/TLS</span><span>Networking</span>
-      <span>MS SQL Server</span><span>YARN</span><span>Impala</span><span>Azure</span><span>AWS</span>
-      <span>RDBMS</span><span>SQL</span>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>M.Tech in Computing Science</h3>
-        <p>OPJS University</p>
-      </div>
-
-      <div class="card">
-        <h3>B.Tech in Computer Science &amp; Engineering</h3>
-        <p>Baba Ghulam Shah Badshah University</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Awards -->
-  <section id="awards">
-    <h2>Honors &amp; Awards</h2>
-    <div class="card">
-      <ul>
-        <li>Rising Star — CenturyLink (2019)</li>
-        <li>Star COE — Cloudera (2023)</li>
-        <li>Star COE — Cloudera (2024)</li>
-        <li>Code Award Winner — Cloudera (2025)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="card">
-      <ul>
-        <li>Microsoft SQL Database Infrastructure Administration (70-764)</li>
-        <li>Cloudera Generalist (CDP-0011)</li>
-        <li>ITIL 4 Foundation</li>
-        <li>Cloudera Administrator On-Premises (CDP-2001)</li>
-        <li>Azure Fundamentals (AZ-900)</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p><strong>Email:</strong> <a href="mailto:mirzahid431@gmail.com">mirzahid431@gmail.com</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/prince-zahid-5b389b10b" target="_blank">linkedin.com/in/prince-zahid-5b389b10b</a></p>
-      <p><strong>Phone:</strong> +91-6005200277</p>
-    </div>
-  </section>
-
-  <footer>
-    © <script>document.write(new Date().getFullYear());</script> Prince Zahid — All Rights Reserved.
-  </footer>
-
-</body>
-</html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Prince Zahid | Senior Product Support Engineer</title>
+<meta name="description" content="Portfolio of Prince Zahid, Senior Product Support Engineer for data lakehouse platforms, with AI and Claude projects.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+:root{--bg:#f6f8fa;--surface:#fff;--fg:#0e1a26;--muted:#52627a;--line:#d8e0ea;--accent:#0b7f8c;--accent-soft:#dff3f5;--accent-fg:#fff;--display:'Space Grotesk',system-ui,sans-serif;--body:'Inter',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#0a1119;--surface:#101b27;--fg:#e6eef7;--muted:#8fa3ba;--line:#1f2f41;--accent:#3cc6d6;--accent-soft:#12303a;--accent-fg:#06222a;color-scheme:dark}}
+*{box-sizing:border-box}body{background:var(--bg);color:var(--fg);font:16px/1.65 var(--body);margin:0}a{color:var(--accent)}a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:16px}
+header.bar{border-bottom:1px solid var(--line)}header.bar .wrap{display:flex;gap:16px;justify-content:space-between;align-items:center;padding-block:14px;flex-wrap:wrap}
+.brand{font:600 15px var(--mono)}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:var(--muted);text-decoration:none;font-size:14px}nav a:hover{color:var(--fg)}
+.hero{padding-block:64px 48px;display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:center}.hero>*{min-width:0}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font:700 clamp(2.4rem,6vw,4rem)/1.05 var(--display);margin:12px 0 16px;letter-spacing:-.02em}
+.lede{font-size:1.1rem;color:var(--muted);max-width:60ch;margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-block;padding:10px 18px;border:1px solid var(--line);border-radius:6px;text-decoration:none;color:var(--fg);font-weight:500;font-size:15px;background:var(--surface)}.btn.primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.photo{width:220px;height:220px;border-radius:50%;border:3px solid var(--accent);background:var(--accent-soft);position:relative;overflow:hidden;justify-self:end}.photo img{width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:1}.photo span{position:absolute;inset:0;display:grid;place-items:center;font:700 64px var(--display);color:var(--accent)}
+.facts{display:flex;flex-wrap:wrap;border-block:1px solid var(--line);margin-bottom:8px}.facts div{flex:1 1 180px;padding:18px 20px 18px 0}.facts b{display:block;font:600 1.6rem var(--display)}.facts small{color:var(--muted);font-size:13px}
+section{padding-block:48px;border-top:1px solid var(--line)}.facts+section{border-top:0}
+.sec{display:grid;grid-template-columns:200px 1fr;gap:32px}.sec>*{min-width:0}
+h2{font:600 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:6px 0 0}
+.job{padding-bottom:32px}.job:last-child{padding-bottom:0}.job h3{font:600 1.25rem var(--display);margin:0}.job .meta{font:400 13px var(--mono);color:var(--muted);margin:2px 0 12px}.job ul{margin:0;padding-left:1.1em;display:grid;gap:8px}
+.skills{display:grid;gap:20px}.skills h3{font:500 13px var(--mono);color:var(--accent);margin:0 0 8px}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{font-size:13.5px;padding:4px 10px;border:1px solid var(--line);border-radius:4px;background:var(--surface)}
+.ai{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px}.ai p{margin:0 0 16px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--fg)}.card:hover{border-color:var(--accent)}.card h3{font:600 1.05rem var(--mono);margin:0;color:var(--accent);overflow-wrap:anywhere}.card p{margin:0;color:var(--muted);font-size:14.5px}.card .stack{font:400 12px var(--mono);color:var(--muted);margin-top:auto;padding-top:8px}
+ul.plain{list-style:none;margin:0;padding:0;display:grid;gap:10px}.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}.two h3{font:500 13px var(--mono);color:var(--accent);margin:0 0 10px}
+.copy{font-family:var(--mono);font-size:14px;background:var(--surface);border:1px solid var(--line);padding:3px 8px;border-radius:4px;user-select:all}
+footer{border-top:1px solid var(--line);padding-block:28px;color:var(--muted);font-size:13px}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-block:40px 32px;gap:28px}.photo{width:140px;height:140px;justify-self:start;order:-1}.photo span{font-size:42px}.sec{grid-template-columns:1fr;gap:16px}.two{grid-template-columns:1fr}}
+</style></head><body>
+<header class="bar"><div class="wrap"><div class="brand">pzahid@lakehouse:~$</div><nav aria-label="Sections"><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#ai">AI &amp; Claude</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav></div></header>
+<main class="wrap">
+<div class="hero"><div><div class="eyebrow">Senior Product Support Engineer</div><h1>Prince Zahid</h1><p class="lede">I resolve complex, escalated issues on data lakehouse and big-data platforms: query performance, stability, security and cloud deployments. 7+ years from SQL Server to Hive, Impala and now Dremio, and I build small AI tools to make support faster.</p><div class="cta"><a class="btn primary" href="https://github.com/pzahid">GitHub</a><a class="btn" href="https://linkedin.com/in/prince-zahid-5b389b10b">LinkedIn</a><a class="btn" href="#contact">Contact</a></div></div>
+<div class="photo"><span aria-hidden="true">PZ</span><img src="https://avatars.githubusercontent.com/u/112503352?v=4&s=440" alt="Portrait of Prince Zahid" onerror="this.remove()"></div></div>
+<div class="facts"><div><b>7+ yrs</b><small>Databases and big data</small></div><div><b>50+</b><small>SQL Server databases administered</small></div><div><b>4</b><small>Awards at Cloudera and CenturyLink</small></div><div><b>5</b><small>Industry certifications</small></div></div>
+<section id="experience"><div class="sec"><h2>Experience</h2><div>
+<div class="job"><h3>Senior Product Support Engineer, Dremio</h3><div class="meta">10/2025 – Present</div><ul><li>Own escalated cases for Dremio Cloud and Dremio Software, including Kubernetes and Helm deployments, from first response to root cause.</li><li>Diagnose query performance and planning issues with query profiles, Reflections, table statistics and engine configuration.</li><li>Support Apache Iceberg lakehouse workloads: Reflection refreshes, small-file and layout problems, metadata, authentication and connectivity.</li><li>Reproduce issues, isolate product defects and raise well-documented bugs to Engineering and Product, tracked to closure.</li><li>Write knowledge articles so recurring issues are resolved faster across the team.</li></ul></div>
+<div class="job"><h3>Senior Customer Operations Engineer, Cloudera</h3><div class="meta">01/2022 – 10/2025 · CDP Private and Public Cloud</div><ul><li>Advanced support for Hive, Impala, Tez, HUE and Cloudera Data Warehouse for enterprise customers.</li><li>Subject matter expert for Apache Hive and HUE; trained and mentored new joiners.</li><li>Authored knowledge-base solutions and Cloudera Community articles; analysed recurring cases to surface product defects.</li><li>Recognised with Star COE (2023, 2024) and the Code Award (2025).</li></ul></div>
+<div class="job"><h3>Database Administrator, SQL Server, Lumen Technologies</h3><div class="meta">12/2018 – 01/2022 · formerly CenturyLink</div><ul><li>Administered 50+ SQL Server databases across on-premises and Azure with a focus on availability and performance.</li><li>Designed HA/DR with Always On, clustering, log shipping, replication and TDE.</li><li>Handled patching, recovery and migrations across SQL Server 2008–2017, plus Azure SQL provisioning and backups.</li></ul></div>
+</div></div></section>
+<section id="skills"><div class="sec"><h2>Skills</h2><div class="skills">
+<div><h3>Data platforms</h3><div class="tags"><span class="tag">Dremio</span><span class="tag">Apache Iceberg</span><span class="tag">Hive</span><span class="tag">Impala</span><span class="tag">Tez</span><span class="tag">YARN</span><span class="tag">HUE</span><span class="tag">Hadoop (HDP, CDH, CDP)</span></div></div>
+<div><h3>Databases</h3><div class="tags"><span class="tag">SQL Server</span><span class="tag">Azure SQL</span><span class="tag">SQL</span><span class="tag">Always On</span><span class="tag">Clustering</span><span class="tag">Log shipping</span><span class="tag">TDE</span><span class="tag">Backup and recovery</span></div></div>
+<div><h3>Cloud and infrastructure</h3><div class="tags"><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">Kubernetes</span><span class="tag">Helm</span><span class="tag">Linux (Red Hat)</span></div></div>
+<div><h3>Security and networking</h3><div class="tags"><span class="tag">TLS/SSL</span><span class="tag">Kerberos</span><span class="tag">LDAP</span><span class="tag">Active Directory</span><span class="tag">DNS</span><span class="tag">VPN</span><span class="tag">IPsec</span><span class="tag">SSH</span></div></div>
+<div><h3>Support practice</h3><div class="tags"><span class="tag">Root-cause analysis</span><span class="tag">Query profile analysis</span><span class="tag">Escalation management</span><span class="tag">Knowledge authoring</span><span class="tag">Mentoring</span><span class="tag">ITIL</span></div></div>
+</div></div></section>
+<section id="ai"><div class="sec"><h2>AI &amp; Claude</h2><div class="ai"><p>I apply AI where it shortens time to resolution: triaging cases, drafting customer updates and turning closed cases into documentation. Everything below is backed by a repo you can read.</p><div class="tags"><span class="tag">Claude API</span><span class="tag">Tool use and agent loops</span><span class="tag">Claude skills (SKILL.md)</span><span class="tag">Prompt engineering</span><span class="tag">Model Context Protocol (MCP)</span><span class="tag">Retrieval over knowledge bases</span><span class="tag">AI-assisted root-cause analysis</span><span class="tag">Evaluation of AI outputs</span></div></div></div></section>
+<section id="projects"><div class="sec"><h2>Projects</h2><div class="grid">
+<a class="card" href="https://github.com/pzahid/claude-support-triage-agent"><h3>claude-support-triage-agent</h3><p>Claude tool-use agent that classifies support cases and searches a knowledge base. Runs offline without a key.</p><div class="stack">Python · Claude API</div></a>
+<a class="card" href="https://github.com/pzahid/claude-skills-support-engineering"><h3>claude-skills-support-engineering</h3><p>Claude skills for root-cause analysis, knowledge articles and customer updates.</p><div class="stack">SKILL.md · Claude</div></a>
+<a class="card" href="https://github.com/pzahid/iceberg-small-files-doctor"><h3>iceberg-small-files-doctor</h3><p>Finds small-file problems in a table listing and suggests a compaction statement.</p><div class="stack">Python · Apache Iceberg · Dremio</div></a>
+<a class="card" href="https://github.com/pzahid/query-profile-triage"><h3>query-profile-triage</h3><p>Turns a query-profile summary into findings: planning time, skew, spill, unused Reflections.</p><div class="stack">Python · Query performance</div></a>
+<a class="card" href="https://github.com/pzahid/sqlserver-dba-toolkit"><h3>sqlserver-dba-toolkit</h3><p>Read-only T-SQL checks for backups, Always On, TDE, sizing and log reuse.</p><div class="stack">T-SQL · SQL Server · Azure</div></a>
+<a class="card" href="https://github.com/pzahid/helm-values-checker"><h3>helm-values-checker</h3><p>CI-friendly linter for Helm values: resources, replicas and plain-text secrets.</p><div class="stack">Python · Kubernetes · Helm</div></a>
+</div></div></section>
+<section id="credentials"><div class="sec"><h2>Credentials</h2><div class="two">
+<div><h3>Certifications</h3><ul class="plain"><li>Cloudera Generalist (CDP-0011)</li><li>Cloudera Administrator, on premises (CDP-2001)</li><li>Microsoft Azure Fundamentals (AZ-900)</li><li>Microsoft Administering a SQL Database Infrastructure (70-764)</li><li>ITIL 4 Foundation</li></ul></div>
+<div><h3>Awards</h3><ul class="plain"><li>Code Award, Cloudera · 07/2025</li><li>Star COE, Cloudera · 11/2024</li><li>Star COE, Cloudera · 08/2023</li><li>Rising Star, CenturyLink · 03/2019</li></ul><h3 style="margin-top:24px">Education</h3><ul class="plain"><li>M.Tech, Computing Science, OPJS University</li><li>B.Tech, Computer Science and Engineering, Baba Ghulam Shah Badshah University</li></ul></div>
+</div></div></section>
+<section id="contact"><div class="sec"><h2>Contact</h2><div><p style="margin-top:0">Open to conversations about data platforms, support engineering and applied AI. Based in Srinagar, India. Languages: English, Urdu, Arabic.</p><p><span class="copy">mirzahid431@gmail.com</span></p><div class="cta"><a class="btn primary" href="https://github.com/pzahid">github.com/pzahid</a><a class="btn" href="https://linkedin.com/in/prince-zahid-5b389b10b">LinkedIn</a></div></div></div></section>
+</main>
+<footer><div class="wrap">© Prince Zahid</div></footer>
+</body></html>
